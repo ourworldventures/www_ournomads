@@ -1,0 +1,23 @@
+{% extends "_default/base.html" %}
+{% block content %}
+
+<!-- Default page template for blog posts and basic informative markdown files -->
+<main>
+
+<div class="sm:w-5/6 md:w-4/5 mr-auto ml-auto px-6 lg:px-16 xl:w-11/12">
+<img class="max-h-60 sm:max-h-60 md:max-h-80 lg:max-h-96 mx-auto" src={{"/" ~ page.extra.imgPath}} alt="">
+<div>
+    <article class="article lg:w-5/6 mx-auto">
+    <h2 class="tracking-tight pt-8 lg:pt-8 2xl:pt-24 text-left fw-500 leading-snug font-normal mb-10">
+        {{ page.title }} 
+    </h2>
+    <h4 class="text-sm not-italic font-light leading-6 text-gray-600"> 
+    </h4>
+        
+      {{ page.content | safe }}
+    </article>
+</div>
+</div>
+</main>
+
+{% endblock content %}

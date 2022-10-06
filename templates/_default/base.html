@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" charset="utf-8">
+
+    {% include "partials/head.html" %}
+    
+    <body>
+        {% include "partials/header.html" %}
+        <div id="content" class="mx-8 md:mx-12 lg:mx-16 xl:mx-20 pt-24">
+            {% block content %}{% endblock %}    
+        </div>
+        {% include "partials/footer.html" %}
+    </body>
+</html>

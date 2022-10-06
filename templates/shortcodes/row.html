@@ -1,0 +1,192 @@
+<!-- row shortcode 
+Shortcode used in markdown for the creation of mobile compatible vertical rows
+Divides markdown into columns by splitting content using column identifier "|||"
+Creates equal width blocks in a flex row.
+
+Parameters: 
+- style: 
+    - lean: if style is lean, the row doesn't have outer margins
+- bgPath: if bgPath is passed, the row has a full width background
+-->
+
+
+<!-- This fixes link & img paths in local, prod, and wth prefix -->
+{% if page %}
+    {% if "](" in body %}
+    {% set body_arr = body | split(pat="](") %}
+    {% set body = body_arr[0] %}
+        {% for i in body_arr %}
+            {% set prev_index = loop.index0 - 1 %}
+            {% if not loop.first %}
+            {% if "![" in body_arr[prev_index] %}
+                {% set_global body = body ~ '](' ~ page.permalink ~ i %}
+            {% else %}
+                {% if i is not starting_with("http") %}
+                    {% set base_url = get_url(path="") %}
+                    {% set_global body = body ~ '](' ~ base_url ~ i %}
+                {% else %}
+                    {% set_global body = body ~ '](' ~ i %}
+                {% endif %}
+            {% endif %}
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+{% endif %}
+
+{% set columns = body | safe | markdown | split(pat="<p>|||</p>") %}
+
+{% set row_class =  "relative py-12 flex flex-col sm:grid sm:grid-cols-2 sm:gap-10 md:flex md:flex-row flex-wrap max-w-fit "%}
+
+<!-- aligns columns depending on col number-->
+{% if 2 < columns | length %}
+    {% set row_class = row_class ~ " lg:items-start" %}
+{% else %} 
+    {% set row_class = row_class ~ " lg:items-center" %}
+{% endif %}
+
+{% set col_class = "flex-1 mb-4 md:mb-12 lg:mb-0 " %}
+{% set col_class = col_class ~ " lg:mx-8 " %}
+
+
+<!-- Margins -->
+
+{% set margin_class = " mx-4 md:mx-16 lg:mx-24 " %}
+
+{% if margin %}
+    {% if "none" in margin %}
+        {% set margin_class = " mx-0 " %}
+    {% elif "wide" in margin %}
+        {% set margin_class = " mx-4 sm:mx-8 md:mx-12 lg:mx-16 xl:mx-20 " %}
+    {% elif "moderate" in margin %}
+        {% set margin_class = " mx-8 sm:mx-16 md:mx-24 lg:mx-28 " %}
+    {% elif "narrow" in margin %}
+        {% set margin_class = " mx-12 sm:mx-20 md:mx-28 lg:mx-32 " %}
+    {% elif "tight" in margin %}
+        {% set margin_class = " mx-20 sm:mx-32 md:mx-60 lg:mx-80 xl:mx-96 " %}
+    {% endif %}
+    {% if "lean-left" in margin %}
+        {% set col_class = col_class ~ " lg:last:px-20 lg:max-w-[50%] lg:mx-0 " %}
+        {% set row_class = row_class ~ " !ml-0 sm:gap-0 " %}
+    {% elif "lean-right" in margin %}
+        {% set col_class = col_class ~ " lg:first:px-20 lg:max-w-[50%] lg:mx-0 " %}
+        {% set row_class = row_class ~ " !mr-0 sm:gap-0 " %}
+    {% endif %}
+{% endif %}
+
+{% set row_class =  row_class ~ margin_class %}
+
+{% if style %}
+
+    {% if "center" in style %}
+        {% set row_class = row_class ~ " text-center items-center mx-auto justify-center " %}
+        {% set col_class = col_class ~ " flex-1 " %}
+    {% endif %}
+
+    <!-- makes row full screen width, strips margins -->
+    {% if "lean" in style %}
+        {% if "lean-left" in style %}
+            {% set col_class = col_class ~ " last:px-20 lg:max-w-[50%] " %}
+            {% set row_class = row_class ~ " sm:gap-0 " %}
+        {% elif "lean-right" in style %}
+            {% set col_class = col_class ~ " first:px-20 lg:max-w-[50%] -mr-8 md:-mr-12 lg:-mr-16 xl:-mr-20 " %}
+            {% set row_class = row_class ~ " sm:gap-0 " %}
+        {% else %}
+            {% set row_class = row_class ~ " md:py-0 " %}
+            {% set col_class = col_class ~ " lg:m-0" %}
+        {% endif %}    
+    {% else %}
+        {% set row_class = row_class ~ " w-screen " %}
+    {% endif %}
+
+     <!-- makes row semi-full screen width, strips margins -->
+     {% if "between" in style %}
+     {% set row_class = row_class ~ " lg:max-w-6xl " %}
+ {% elif "moderate" in style %}
+     {% set row_class = row_class ~ " " %}
+ {% endif %}
+
+        <!-- makes row full screen width, strips margins -->
+    {% if "narrow" in style %}
+        {% set row_class = row_class ~ " lg:max-w-3xl " %}
+    {% elif "tight" in style %}
+        {% set row_class = row_class ~ " lg:max-w-sm " %}
+    {% elif "moderate" in style %}
+        {% set row_class = row_class ~ " mx-20 " %}
+    {% endif %}
+
+    {% if "invert-color" in style %}
+
+                {% set row_class = row_class ~ " text-white lg:text-white " %}
+
+    {% endif %}
+    {% else %}
+        {% set row_class = row_class ~ " " %}
+{% endif %}
+
+{% set anchor_link = ""%}
+{% if anchor %}
+    {% set anchor_link = anchor %}
+{% endif %}
+
+
+<!-- makes row full screen width and adds background img -->
+{% set styles = ""  %}
+{% set div_class = " " %}
+{% if bgPath %}
+    {% set background_url = page.permalink ~ bgPath %}
+    {% set styles = "background: url('" ~ background_url ~ "'); background-size: cover; background-position: center;"  %}
+    {% if "#desktop" in bgPath %}
+        {% set bgStyle = false %}
+        {% set div_class = " !bg-[length:0px_0px] !bg-no-repeat lg:!bg-cover " %}
+        {% set row_class = row_class | replace(from='text-white', to='text-black') %}
+        {% if "invert-color" in style %}
+            {% if "#desktop" in bgPath %}
+                {% set row_class = row_class ~ " lg:text-white " %}
+            {% endif %}
+        {% endif %}
+    {% endif %}
+{% endif %}
+{% if bgStyle %}
+    {% if "full" in bgStyle %}
+        {% set styles = styles ~ "height: -webkit-fill-available; height: 100vh;"  %}
+    {% elif "hero" in bgStyle %}
+        {% set div_class = div_class ~ " -mt-24 pt-24 " %}
+    {% endif %}
+{% endif %}
+{% if bgColor %}
+    {% set styles = "background-color: " ~ bgColor ~ "; background-size: cover"  %}
+    {% set row_class = row_class ~ " py-0 " %}
+{% endif %}
+
+<!-- Cancels page margins so that rows can have separate margins -->
+{% set no_margins = " -mx-8 md:-mx-12 lg:-mx-16 xl:-mx-20" %}
+
+
+<div id="{{anchor_link}}" class="{{'w-screen relative justify-center flex ' ~ div_class ~ no_margins}}" style="{{styles}}">
+    <div class="{{row_class}}" style="min-width: -webkit-fill-available; min-width: -moz-available"> 
+        
+        {% for column in columns%} 
+
+            <!-- Hides empty columns if displayed vertically in small screen -->
+            {% if column | as_str | length < 10 %} 
+                <div class="hidden md:block flex-1 md:mb-0 md:mx-8 sm:flex-1 ">
+                    {{ column | safe }}
+                </div>
+            {% else %}
+                <div class="{{col_class}}">
+                    <!-- handles mermaid markdown content display -->
+
+                    {% if "{% mermaid() %}" in column %}
+                        {% set mermaid_section = column | safe | markdown | split(pat="{% mermaid() %}") %}
+                        {% set mermaid_content = mermaid_section[1] | striptags | replace(from="–", to="--")%}
+                        <div class="mermaid">
+                            {{mermaid_content | safe }}
+                        </div> 
+                    {% else %}
+                        {{ column | safe }}
+                    {% endif %}
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>

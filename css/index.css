@@ -1,0 +1,361 @@
+/*! purgecss start ignore */
+@import "code.css";
+/*! purgecss end ignore */
+
+@import "tailwindcss/base";
+@import "layout.css";
+@import "tailwindcss/components";
+@import "admonition.css";
+@import "tailwindcss/utilities";
+/* Custom CSS for header partial */
+.backdrop-blur {
+  -webkit-backdrop-filter: blur(40px);
+}
+
+@font-face {
+    font-family: "CercoDEMO";
+    font-weight: 500;
+    src: url("https://www2.freeflow.life/fonts/CercoDEMO-Medium.otf") format("opentype");
+    src: url("../fonts/CercoDEMO-Medium.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "CercoDEMO";
+    font-weight: 600;
+    src: url("https://www2.freeflow.life/fonts/CercoDEMO-Bold.otf") format("opentype");
+    src: url("../fonts/CercoDEMO-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "CercoDEMO";
+    font-weight: 400;
+    src: url("https://www2.freeflow.life/fonts/CercoDEMO-Light.otf") format("opentype");
+    src: url("../fonts/CercoDEMO-Light.otf") format("opentype");
+}
+
+* {
+  font-family: "CercoDEMO", sans-serif;
+}
+
+a {
+  font-family: "CercoDEMO", sans-serif;
+}
+
+.bg-semi-white {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+/* Custom css allowing image styling in markdown */
+img[src*="#mx-auto"] {
+  margin: auto;
+}
+
+img[src*="#small"] {
+  width: 68px;
+}
+
+img[src*="#md"] {
+    width: 300px;
+}
+
+img[src*="#medium"] {
+    width: 400px;
+}
+
+img[src*="#logo"] {
+  max-width: min(250px, 100%);
+  margin: auto;
+}
+
+img[src*="#large"] {
+  width: min(60vw, 100vh);
+  margin: auto;
+}
+
+img[src*="#tft_img"] {
+  width: 150px;
+  margin: 8px;
+}
+
+.logo_size {
+  width: 200px;
+}
+
+@layer components {
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl leading-none font-normal;
+  }
+  h1 strong {
+    @apply font-medium;
+  }
+  h2 {
+    @apply text-3xl md:text-4xl lg:text-5xl xl:text-5xl font-normal leading-none;
+  }
+  h2 strong {
+    @apply font-medium;
+  }
+  h3 {
+    @apply text-xl md:text-2xl lg:text-3xl font-light;
+  }
+  h3 strong {
+    @apply font-medium;
+  }
+  h4 {
+    @apply text-xl lg:text-2xl font-normal;
+  }
+  h5 {
+    @apply text-xl lg:text-xl font-normal;
+  }
+  h6 {
+    @apply text-lg not-italic font-normal my-1;
+  }
+  p {
+    @apply text-lg lg:text-xl leading-tight tracking-normal font-normal;
+    font-family: "CercoDEMO", sans-serif;
+  }
+  blockquote {
+    @apply border-l-4 border-gray-400 mx-2 my-2 p-2;
+  }
+  li {
+    @apply text-lg lg:text-xl font-normal;
+  }
+  li li {
+    @apply text-sm lg:text-sm font-light;
+  }
+  button {
+    @apply inline-block
+    text-base
+    lg:text-lg
+    px-12
+    py-1
+    mr-5
+    my-10
+    border-2
+    shadow
+    capitalize;
+  }
+}
+
+button:hover :is(:where(a)) {
+  color: #c6f8ff;
+}
+
+button :is(:where(p)) {
+  color: #3d3b39;
+  font-weight: 400;
+}
+
+header .freeflow {
+    background-color: transparent;
+    position: absolute;
+}
+
+footer .freeflow {
+    width: 100vw;
+    background-color: #eae8e3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+footer .freeflow img {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+
+header .freeflow div {
+    box-shadow: none;
+    text-transform: uppercase;
+    font-weight: 700 !important;
+}
+
+button {
+  background-color: #1a1a1a;
+  border-radius: 20px;
+  border: 2px solid white;
+  box-shadow: none;
+  font-size: 20px;
+}
+
+button {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    border: none;
+    box-shadow: none;
+    font-size: 20px;
+  }
+
+button a {
+  color: white;
+}
+
+a {
+  border: none;
+}
+
+header {
+  font-family: "Work Sans";
+}
+
+.nav_btn {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.quicklinks {
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: auto;
+  display: inline-block;
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-top: 30px;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.quicklinks img {
+  height: auto;
+  max-width: 200px;
+  display: inline-block;
+  padding: 10px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  position: relative;
+  margin-right: 30px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  opacity: 0.5;
+}
+
+.quicklinks img:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+.banner {
+  width: 100%;
+  margin: 0;
+  padding: 120px 0;
+  text-align: center;
+  position: relative;
+  display: block;
+  color: #fff !important;
+  letter-spacing: 0.5px;
+  overflow: hidden;
+  background: #00838d;
+  transition: 1.5s;
+}
+
+.header {
+  height: auto;
+  background: none;
+  padding: 200px 0;
+}
+
+.banner h2,
+.header h1 {
+  margin: auto;
+  color: #fff;
+  position: relative;
+  transition: 0.3s;
+  z-index: 1;
+  white-space: nowrap;
+}
+
+.header h1 {
+  color: #000;
+  transition: none;
+}
+
+.banner h2 svg {
+  font-size: 40px;
+  margin-left: 15px;
+  position: absolute;
+  top: 55%;
+  transform: translateY(-50%) scale(0.5);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.banner .back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-position: center;
+  background-size: cover;
+  filter: grayscale(1) contrast(1.4);
+  opacity: 0.25;
+  transition: 1.5s;
+}
+
+.header .back {
+  filter: none;
+  opacity: 1;
+  background-position: center;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banner:hover {
+  background: #4b3a92;
+}
+
+.header:hover {
+  background: none;
+}
+
+.banner:hover h2 svg {
+  transform: translateY(-50%) scale(1);
+  opacity: 1;
+}
+
+.banner:hover h2 {
+  padding-right: 40px;
+}
+
+.header:hover h1 {
+  padding-right: 0;
+}
+
+.banner:hover .back {
+  transform: scale(1.03);
+}
+
+.header:hover .back {
+  transform: none;
+}
+@media (max-width: 640px) {
+  .banner h2 {
+    font: 600 7vw/10vw;
+  }
+
+  .header h1 {
+    font-size: 35px;
+  }
+
+  .banner h2 svg {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner,
+  .header {
+    padding: 80px 0;
+  }
+}
