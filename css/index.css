@@ -7,45 +7,15 @@
 @import "tailwindcss/components";
 @import "admonition.css";
 @import "tailwindcss/utilities";
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Montserrat:wght@400;700&display=swap');
 /* Custom CSS for header partial */
 .backdrop-blur {
   -webkit-backdrop-filter: blur(40px);
 }
 
-@font-face {
-    font-family: "CercoDEMO";
-    font-weight: 500;
-    src: url("https://www2.freeflow.life/fonts/CercoDEMO-Medium.otf") format("opentype");
-    src: url("../fonts/CercoDEMO-Medium.otf") format("opentype");
-}
-
-@font-face {
-    font-family: "CercoDEMO";
-    font-weight: 600;
-    src: url("https://www2.freeflow.life/fonts/CercoDEMO-Bold.otf") format("opentype");
-    src: url("../fonts/CercoDEMO-Bold.otf") format("opentype");
-}
-
-@font-face {
-    font-family: "CercoDEMO";
-    font-weight: 400;
-    src: url("https://www2.freeflow.life/fonts/CercoDEMO-Light.otf") format("opentype");
-    src: url("../fonts/CercoDEMO-Light.otf") format("opentype");
-}
-
-@font-face {
-    font-family: "BebasNeue";
-    font-weight: 600;
-    src: url("https://www2.freeflow.life/fonts/BebasNeue-Bold.ttf") format("opentype");
-    src: url("../fonts/BebasNeue-Bold.ttf") format("opentype");
-}
-
 * {
-  font-family: "CercoDEMO", sans-serif;
-}
-
-a {
-  font-family: "CercoDEMO", sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 .bg-semi-white {
