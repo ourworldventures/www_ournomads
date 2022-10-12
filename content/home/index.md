@@ -9,9 +9,9 @@ weight: 1
 
 <!-- section 1 (header) -->
 
-{% row(margin="header" bgPath="bg_home.png" bgStyle="full") %}
+{% row(margin="header" bgPath="home_header.jpg" bgStyle="full") %}
 
-## WORK, <br> LIVE & PLAY
+# WORK, <br> LIVE & PLAY
 
 Our world offers Digital Nomads <br /> truly amazing experiences in some <br /> of the world’s best locations.
 
