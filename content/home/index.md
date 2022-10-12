@@ -47,16 +47,20 @@ Me created an enviroment that meets people’s personal and professional needs
 
 {% end %}
 
-{% row(style="center" margin="moderate" bgColor="#fff" padding="top") %}
+<!-- section 3 -->
 
-## JOIN THE <br> MOVEMENT
+<!-- section 2 (INTERCONNECTED) -->
 
-### **FreeFlow invites you to your new sovereign digital life.**
+{% row(style="center margin") %}
 
-{% end %}
+![Image](RGAsset13.png)
 
-{% featured_stories() %}
+|||
 
-## Join The Movement
+## HAND-PICKED <br /> LOCATIONS
+
+Carefully chosen locations that offer an array of services and activities are ready for all digital nomads
+
+<button>[OUR LOCATIONS](/)</button>
 
 {% end %}
