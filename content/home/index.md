@@ -49,8 +49,6 @@ Me created an enviroment that meets people’s personal and professional needs
 
 <!-- section 3 -->
 
-<!-- section 2 (INTERCONNECTED) -->
-
 {% row(style="center margin") %}
 
 ![Image](RGAsset13.png)
@@ -62,5 +60,75 @@ Me created an enviroment that meets people’s personal and professional needs
 Carefully chosen locations that offer an array of services and activities are ready for all digital nomads
 
 <button>[OUR LOCATIONS](/)</button>
+
+{% end %}
+
+<!-- section 4 -->
+
+{% row(style="margin") %}
+
+![Image](RGAsset14.png#sm#mx-auto)
+
+|||
+
+### **CONSCIOUS LIVING**
+
+Live in sustainable and planet-conscious structures built to support the planet
+
+|||
+
+![Image](RGAsset14.png)
+
+|||
+
+### HAND-PICKED <br /> LOCATIONS
+
+Carefully chosen locations that offer an array of services and activities are ready for all digital nomads
+
+{% end %}
+
+<!-- section 4 -->
+
+{% row(style="margin") %}
+
+![Image](RGAsset14.png)
+
+|||
+
+### HAND-PICKED <br /> LOCATIONS
+
+Carefully chosen locations that offer an array of services and activities are ready for all digital nomads
+
+![Image](RGAsset14.png)
+
+|||
+
+### HAND-PICKED <br /> LOCATIONS
+
+Carefully chosen locations that offer an array of services and activities are ready for all digital nomads
+
+{% end %}
+
+<!-- section 4 -->
+
+{% row(style="margin") %}
+
+![Image](RGAsset14.png)
+
+|||
+
+### HAND-PICKED <br /> LOCATIONS
+
+Carefully chosen locations that offer an array of services and activities are ready for all digital nomads
+
+|||
+
+![Image](RGAsset14.png)
+
+|||
+
+### HAND-PICKED <br /> LOCATIONS
+
+Carefully chosen locations that offer an array of services and activities are ready for all digital nomads
 
 {% end %}
