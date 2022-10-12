@@ -185,7 +185,7 @@ Parameters:
 {% set no_margins = " -mx-8 md:-mx-12 lg:-mx-16 xl:-mx-20" %}
 
 
-        <div id="{{anchor_link}}" class="{{'w-screen relative justify-center flex ' ~ div_class }}" style="{{styles}}">
+        <div id="{{anchor_link}}" class="{{'w-screen relative justify-center flex overflow-hidden ' ~ div_class }}" style="{{styles}}">
             <div id="{{row_id}}" class="{{row_class}}" style="min-width: -webkit-fill-available; min-width: -moz-available"> 
         
         {% for column in columns%} 

@@ -9,7 +9,7 @@ weight: 1
 
 <!-- section 1 (header) -->
 
-{% row(margin="header" bgPath="bg_home.png" bgStyle="full") %}
+{% row(margin="header" bgPath="home_header.jpg" bgStyle="full") %}
 
 ## WORK, <br> LIVE & PLAY
 
@@ -19,23 +19,31 @@ Our world offers Digital Nomads <br /> truly amazing experiences in some <br /> 
 
 {% end %}
 
-<!-- section 2 (FF LIFE) -->
+<!-- section 2  -->
 
-{% row(style="center" bgColor="#F5F1ED" margin="moderate" id="fflow_vision") %}
+{% row(style="center margin") %}
 
-<br>
+![REGENERATION](RGAsset10.png#medium)
 
-## THE FREEFLOW <br> VISION.
+### **REGENERATION**
 
-### Our vision is to create a more <br>safe and sovereign internet together.
-
-We dream about a global network of internet capacity <br>which can be the foundation for our digital life <br>where everyone can be equal and powerful, <br>where we don't have to be a product, <br> where information can be authentic.
-
-<button>[MORE DETAILS](/vision)</button>
+We offer endless services to heal the body, mind and soul
 
 |||
 
-![FreeFlow Life](ff_vision.png)
+![CONNECTIONS](RGAsset11.png#medium)
+
+### **CONNECTIONS**
+
+Our locations are designed to provide intimacy and bring people together
+
+|||
+
+![EXPERIENCE](RGAsset12.png#medium)
+
+### **EXPERIENCE**
+
+Me created an enviroment that meets people’s personal and professional needs
 
 {% end %}
 
