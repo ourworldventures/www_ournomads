@@ -7,10 +7,14 @@ main {
 #text-3xl { @apply text-3xl }
 #text-4xl { @apply text-4xl }
 #text-5xl { @apply text-5xl }
-#text-6xl { @apply text-6xl }
+#text-6xl { @apply xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl}
 #text-7xl { @apply text-7xl }
 #text-8xl { @apply text-8xl }
+#text-9xl { 
+    font-size: 8rem;
+}
 
+#xp-heading { @apply m-0 }
 /*
 html, body {
   @apply dark:bg-black;

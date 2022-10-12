@@ -1,10 +1,6 @@
 echo "Starting build..."
 
 # TODO: Check if current version is latest to avoid redundant installation
-if [[ -f "tailwindcss" ]]
-then
-    rm tailwindcss
-fi
 
 # checks os and architecture for correct release
 # https://stackoverflow.com/a/8597411 
@@ -40,5 +36,3 @@ echo "Compiling tailwindcss and building zola project..."
 rm -rf public static/css
 ./tailwindcss -i css/index.css -o ./static/css/index.css --minify
 zola build
-
-

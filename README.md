@@ -1,33 +1,35 @@
-# ThreeFold Web Template
+# FreeFlow Life Website
 
 ## About
 
-A website template created using Zola, a static site generator. The template helps create simple responsive websites using mostly markdown.
+A website created using Zola, a static site generator.
 
-The purpose of this template is:
-- To allow easier content publishing / editing on websites.
-- To reuse a single source of content across multiple websites, removing redundant content.  
+- The contents of the pages reside in the markdown files in /content (written in CommmonMark)
+- The pages are rendered using HTML templates with Tailwind CSS framework in /templates
 
 ## Getting Started
 
-For now, this repository is meant to use as a template for static sites.
+This repository is meant to use as a template for static sites.
 
 To use this repository as a template, simply:
+
+- clone repository
+- add your own content to templates directory (see more below)
 - [install Zola](https://www.getzola.org/documentation/getting-started/installation/),
-- Create a new repository from template at https://github.com/threefoldfoundation/web_template/generate
-- Add your own content to content directory of your repository(see more below)
-- run `sh start.sh`
+- run `npm install` to install dependencies
+- run `npm run start`
 
 ## How to create pages using this template
 
 ### Structure of the content directory
 
-Every index.md file in a content directory corresponds to a page, and the landing page is content/\home/\index.md.
-The path of each page is simply its path relative to the root of the content directory.
+Every index.md file in a content directory corresponds to a page, and the landing page is content/\_index.md.
+The path of each page is simply its path relavant to the root of the content directory.
 
 Ex:
+content/\_index.md -> yoururl.com/
 content/blog/\_index.md -> yoururl.com/blog
-content/careers/index.md  -> yoururl.com/careers
+content/careers/index.md or content/careers.md -> yoururl.com/careers
 
 ### Section Templates
 

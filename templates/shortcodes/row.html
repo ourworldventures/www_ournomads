@@ -35,7 +35,7 @@ Parameters:
 
 {% set columns = body | safe | markdown | split(pat="<p>|||</p>") %}
 
-{% set row_class =  "relative py-12 flex flex-col sm:grid sm:grid-cols-2 sm:gap-10 md:flex md:flex-row flex-wrap max-w-fit "%}
+{% set row_class =  "relative flex flex-col md:flex md:flex-row flex-wrap max-w-fit overflow-hidden"%}
 
 <!-- aligns columns depending on col number-->
 {% if 2 < columns | length %}
@@ -44,33 +44,72 @@ Parameters:
     {% set row_class = row_class ~ " lg:items-center" %}
 {% endif %}
 
-{% set col_class = "flex-1 mb-4 md:mb-12 lg:mb-0 " %}
-{% set col_class = col_class ~ " lg:mx-8 " %}
+{% set col_class = "flex-1 mb-4 md:mb-12 lg:mb-0 lg:mx-8 xl:mx-12 " %}
+
+
+{% set row_id = '' %}
+
+{% if id %}
+{% set row_id = id %}
+
+{% endif %}
+
+<!-- Padding -->
+
+{% set padding_class = " py-8 md:py-8 lg:py-28" %}
+
+{% if padding %}
+    {% if "none" in padding %}
+        {% set padding_class = " py-0" %}
+    {% elif "top" in padding %}
+        {% set padding_class = " py-2 md:py-4 lg:pt-28" %}
+    {% elif "bottom" in padding %}
+        {% set padding_class = " py-2 md:py-4 lg:pb-28" %}
+    {% endif %}
+{% endif %}
+
+{% if css %}
+    {% set padding_class = padding_class ~ " " ~ css %}
+{% endif %}
+
+{% set row_class =  row_class ~ padding_class %}
 
 
 <!-- Margins -->
 
-{% set margin_class = " mx-4 md:mx-16 lg:mx-24 " %}
+{% set margin_class = " mx-4 md:mx-16 lg:mx-24" %}
 
 {% if margin %}
     {% if "none" in margin %}
-        {% set margin_class = " mx-0 " %}
+        {% set margin_class = " mx-0" %}
     {% elif "wide" in margin %}
-        {% set margin_class = " mx-4 sm:mx-8 md:mx-12 lg:mx-16 xl:mx-20 " %}
+        {% set margin_class = " mx-4 sm:mx-8 md:mx-12 lg:mx-16 xl:mx-20" %}
     {% elif "moderate" in margin %}
-        {% set margin_class = " mx-8 sm:mx-16 md:mx-24 lg:mx-28 " %}
+        {% set margin_class = " mx-8 sm:mx-16 md:mx-20 lg:mx-28" %}
     {% elif "narrow" in margin %}
-        {% set margin_class = " mx-12 sm:mx-20 md:mx-28 lg:mx-32 " %}
+        {% set margin_class = " mx-12 sm:mx-20 md:mx-28 lg:mx-40" %}
     {% elif "tight" in margin %}
-        {% set margin_class = " mx-20 sm:mx-32 md:mx-60 lg:mx-80 xl:mx-96 " %}
+        {% set margin_class = " mx-20 sm:mx-32 md:mx-40 lg:mx-80 xl:mx-96" %}
+    {% elif "header" in margin %}
+        {% set margin_class = " mx-12 sm:mx-20 md:mx-28 lg:mx-40 my-10" %}
     {% endif %}
     {% if "lean-left" in margin %}
-        {% set col_class = col_class ~ " lg:last:px-20 lg:max-w-[50%] lg:mx-0 " %}
-        {% set row_class = row_class ~ " !ml-0 sm:gap-0 " %}
+        {% set margin = margin_class | replace(from=" ", to=" first:")%}
+        {% set margin_left = margin | replace(from="mx", to="-ml") %}
+        {% set margin_right = margin | replace(from="mx", to="mr") %}
+        {% set col_class = col_class ~ " md:last:px-8 lg:last:px-20 lg:max-w-[50%] lg:mx-0 " ~ margin_left ~ margin_right %}
+        {% set row_class = row_class ~ " sm:gap-0 " %}
     {% elif "lean-right" in margin %}
-        {% set col_class = col_class ~ " lg:first:px-20 lg:max-w-[50%] lg:mx-0 " %}
-        {% set row_class = row_class ~ " !mr-0 sm:gap-0 " %}
+        {% set margin = margin_class | replace(from=" ", to=" last:")%}
+        {% set margin_left = margin | replace(from="mx", to="ml") %}
+        {% set margin_right = margin | replace(from="mx", to="-mr") %}
+        {% set col_class = col_class ~ " md:first:px-8  lg:first:px-20 lg:max-w-[50%] lg:mx-0 " ~ margin_left ~ margin_right %}
+        {% set row_class = row_class ~ " sm:gap-0 " %}
     {% endif %}
+{% endif %}
+
+{% if css %}
+    {% set margin_class = margin_class ~ " " ~ css %}
 {% endif %}
 
 {% set row_class =  row_class ~ margin_class %}
@@ -78,32 +117,16 @@ Parameters:
 {% if style %}
 
     {% if "center" in style %}
-        {% set row_class = row_class ~ " text-center items-center mx-auto justify-center " %}
+        {% set row_class = row_class ~ " text-center items-center mx-auto " %}
         {% set col_class = col_class ~ " flex-1 " %}
     {% endif %}
 
-    <!-- makes row full screen width, strips margins -->
-    {% if "lean" in style %}
-        {% if "lean-left" in style %}
-            {% set col_class = col_class ~ " last:px-20 lg:max-w-[50%] " %}
-            {% set row_class = row_class ~ " sm:gap-0 " %}
-        {% elif "lean-right" in style %}
-            {% set col_class = col_class ~ " first:px-20 lg:max-w-[50%] -mr-8 md:-mr-12 lg:-mr-16 xl:-mr-20 " %}
-            {% set row_class = row_class ~ " sm:gap-0 " %}
-        {% else %}
-            {% set row_class = row_class ~ " md:py-0 " %}
-            {% set col_class = col_class ~ " lg:m-0" %}
-        {% endif %}    
-    {% else %}
-        {% set row_class = row_class ~ " w-screen " %}
-    {% endif %}
-
      <!-- makes row semi-full screen width, strips margins -->
-     {% if "between" in style %}
-     {% set row_class = row_class ~ " lg:max-w-6xl " %}
- {% elif "moderate" in style %}
-     {% set row_class = row_class ~ " " %}
- {% endif %}
+    {% if "between" in style %}
+        {% set row_class = row_class ~ " lg:max-w-6xl " %}
+    {% elif "moderate" in style %}
+        {% set row_class = row_class ~ " " %}
+    {% endif %}
 
         <!-- makes row full screen width, strips margins -->
     {% if "narrow" in style %}
@@ -150,20 +173,20 @@ Parameters:
     {% if "full" in bgStyle %}
         {% set styles = styles ~ "height: -webkit-fill-available; height: 100vh;"  %}
     {% elif "hero" in bgStyle %}
-        {% set div_class = div_class ~ " -mt-24 pt-24 " %}
+        {% set div_class = div_class ~ " -mt-24 pt-12 " %}
     {% endif %}
 {% endif %}
 {% if bgColor %}
     {% set styles = "background-color: " ~ bgColor ~ "; background-size: cover"  %}
-    {% set row_class = row_class ~ " py-0 " %}
+    {% set row_class = row_class %}
 {% endif %}
 
 <!-- Cancels page margins so that rows can have separate margins -->
 {% set no_margins = " -mx-8 md:-mx-12 lg:-mx-16 xl:-mx-20" %}
 
 
-<div id="{{anchor_link}}" class="{{'w-screen relative justify-center flex ' ~ div_class ~ no_margins}}" style="{{styles}}">
-    <div class="{{row_class}}" style="min-width: -webkit-fill-available; min-width: -moz-available"> 
+        <div id="{{anchor_link}}" class="{{'w-screen relative justify-center flex ' ~ div_class }}" style="{{styles}}">
+            <div id="{{row_id}}" class="{{row_class}}" style="min-width: -webkit-fill-available; min-width: -moz-available"> 
         
         {% for column in columns%} 
 

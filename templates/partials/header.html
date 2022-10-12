@@ -123,6 +123,7 @@
                     <nav class="flex space-x-10">    
                     {% for page in section.pages %}
                     {% if page.relative_path == "home/index.md" %} {% continue %} {% endif %}
+                    {% if page.extra.menu %} {% continue %} {% endif %}
                         <a href="{{page.permalink}}" class="text-lg leading-6 text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150 mt-0">
                             {{page.title}}
                         </a>
@@ -178,6 +179,7 @@
                         <nav class="flex flex-col justify-around pb-12">
                         {% for page in section.pages %}
                             {% if page.relative_path == "home/index.md" %} {% continue %} {% endif %}
+                            {% if page.extra.menu %} {% continue %} {% endif %}
                             <a href="{{page.permalink}}" class="text-lg px-8 py-3 leading-6 font-normal text-gray-900 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150">
                                 {{page.title}}
                             </a>
