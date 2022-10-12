@@ -16,7 +16,7 @@ jobs:
           key: ${{ secrets.TF_SECRET }}
           port: 34022
           script: |
-            cd /home/webuser/websites/www2/nomads.ourworld.tf/
+            cd /home/webuser/websites/www2/www_ournomads/
             git log -1
             git pull
             bash build.sh
