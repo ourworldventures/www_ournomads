@@ -54,7 +54,7 @@ Me created an enviroment that meets people’s personal and professional needs
 
 {% row(style="center" margin="narrow") %}
 
-![Image](RGAsset13.png)
+![Image](location.jpg)
 
 |||
 
@@ -140,7 +140,7 @@ Enjoy all the cultural, natural, sports and networking evnts of the locations!
 
 <!-- section 5 -->
 
-{% row(style="center margin") %}
+{% row(style="center" margin="narrow") %}
 
 ## REGENERATE <br /> YOURSELF
 
@@ -157,7 +157,7 @@ empowers the local community!
 
 <!-- section 6 -->
 
-{% row(style="center margin narrow") %}
+{% row(style="center" margin="narrow" padding="top") %}
 
 ## START YOUR QURWORLD <br> EXPERIENCE NOW!
 
@@ -167,7 +167,7 @@ Begin your nomadic journey with us.
 
 {% end %}
 
-{% row(margin="header" bgPath="RGAsset21.png" bgStyle="full") %}
+{% row(margin="header" bgPath="journey.jpg" bgStyle="full") %}
 
     <div class="img"></div>
 
