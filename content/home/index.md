@@ -137,3 +137,38 @@ Enjoy the benefits of community-building sessions and tools built specifically f
 Enjoy all the cultural, natural, sports and networking evnts of the locations!
 
 {% end %}
+
+<!-- section 5 -->
+
+{% row(style="center margin") %}
+
+## REGENERATE <br /> YOURSELF
+
+Regenerative farming is part of the OurWorld experience 
+
+All residents and staff members have direct access to local organic produce that helps us heal and
+empowers the local community!
+
+|||
+
+![Image](RGAsset20.png)
+
+{% end %}
+
+<!-- section 6 -->
+
+{% row(style="center margin narrow") %}
+
+## START YOUR QURWORLD <br> EXPERIENCE NOW!
+
+Begin your nomadic journey with us.
+
+<button>[OUR LOCATIONS](/)</button>
+
+{% end %}
+
+{% row(margin="header" bgPath="RGAsset21.png" bgStyle="full") %}
+
+    <div class="img"></div>
+
+{% end %}

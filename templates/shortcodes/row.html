@@ -121,6 +121,11 @@ Parameters:
         {% set col_class = col_class ~ " flex-1 " %}
     {% endif %}
 
+    {% if "items-end" in style %}
+    {% set row_class = row_class ~ " lg:items-end" %}
+    {% set col_class = col_class ~ " flex-1 " %}
+    {% endif %}
+
      <!-- makes row semi-full screen width, strips margins -->
     {% if "between" in style %}
         {% set row_class = row_class ~ " lg:max-w-6xl " %}
@@ -181,11 +186,16 @@ Parameters:
     {% set row_class = row_class %}
 {% endif %}
 
+{% if class %}
+    {% set styles = "background-color: " ~ bgColor ~ "; background-size: cover"  %}
+    {% set row_class = row_class %}
+{% endif %}
+
 <!-- Cancels page margins so that rows can have separate margins -->
 {% set no_margins = " -mx-8 md:-mx-12 lg:-mx-16 xl:-mx-20" %}
 
 
-        <div id="{{anchor_link}}" class="{{'w-screen relative justify-center flex overflow-hidden ' ~ div_class }}" style="{{styles}}">
+        <div id="{{anchor_link}}" class="{{'relative justify-center flex overflow-hidden ' ~ div_class }}" style="{{styles}}">
             <div id="{{row_id}}" class="{{row_class}}" style="min-width: -webkit-fill-available; min-width: -moz-available"> 
         
         {% for column in columns%} 

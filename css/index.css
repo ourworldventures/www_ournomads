@@ -23,6 +23,8 @@
 }
 
 /* Custom css allowing image styling in markdown */
+
+
 img[src*="#mx-auto"] {
   margin: auto;
 }
@@ -177,8 +179,7 @@ footer .freeflow {
 }
 
 footer .freeflow img {
-    width: 200px;
-    margin-bottom: 20px;
+    width: 60px;
 }
 
 
