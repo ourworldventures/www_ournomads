@@ -4,31 +4,18 @@ description: ""
 date: 2018-09-14
 updated: 2021-02-20
 draft: false
-weight: 0
+weight: 1
 ---
 
 <!-- section 1 (header) -->
 
-{% row(style="center" margin="header" bgPath="bg_home.jpg" bgStyle="hero") %}
+{% row(margin="header" bgPath="bg_home.png" bgStyle="full") %}
 
+## WORK, <br> LIVE & PLAY
 
+Our world offers Digital Nomads <br /> truly amazing experiences in some <br /> of the world’s best locations.
 
-![FF Logo](f_logo_small.png#mx-auto)
-
-<br>
-
-
-
-
-
-## FREEFLOW INTO<br> YOUR DIGITAL LIFE
-
-### **OWN YOUR DATA, DIGITAL SKILLS AND IDENTITY**
-
-
-It is now possible to own every aspect of your digital life.
-
-<button>[KNOW MORE](#fflow_vision)</button>
+<button>[KNOW MORE](/)</button>
 
 {% end %}
 
@@ -44,13 +31,9 @@ It is now possible to own every aspect of your digital life.
 
 We dream about a global network of internet capacity <br>which can be the foundation for our digital life <br>where everyone can be equal and powerful, <br>where we don't have to be a product, <br> where information can be authentic.
 
-
-
 <button>[MORE DETAILS](/vision)</button>
 
 |||
-
-
 
 ![FreeFlow Life](ff_vision.png)
 
@@ -69,7 +52,3 @@ We dream about a global network of internet capacity <br>which can be the founda
 ## Join The Movement
 
 {% end %}
-
-
-
-

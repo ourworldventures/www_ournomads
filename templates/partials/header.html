@@ -122,7 +122,6 @@
                 <div class="hidden lg:flex-1 lg:flex lg:items-center lg:justify-end lg:space-x-12">
                     <nav class="flex space-x-10">    
                     {% for page in section.pages %}
-                    {% if page.relative_path == "home/index.md" %} {% continue %} {% endif %}
                     {% if page.extra.menu %} {% continue %} {% endif %}
                         <a href="{{page.permalink}}" class="text-lg leading-6 text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150 mt-0">
                             {{page.title}}
