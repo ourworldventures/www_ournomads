@@ -77,58 +77,60 @@ Live in sustainable and planet-conscious structures built to support the planet
 
 |||
 
-![Image](RGAsset14.png)
+![Image](RGAsset15.png#sm#mx-auto)
 
 |||
 
-### HAND-PICKED <br /> LOCATIONS
+### **SOVEREIGN INTERNET**
 
-Carefully chosen locations that offer an array of services and activities are ready for all digital nomads
+Take advantage of a high-speed, sovereign and decentralized internet connection!
 
 {% end %}
 
-<!-- section 4 -->
+<!-- section 4-2-->
 
 {% row(style="margin") %}
 
-![Image](RGAsset14.png)
+![Image](RGAsset16.png#sm#mx-auto)
 
 |||
 
-### HAND-PICKED <br /> LOCATIONS
+### **SUPPORT LOCALS**
 
-Carefully chosen locations that offer an array of services and activities are ready for all digital nomads
-
-![Image](RGAsset14.png)
+Tackle ECG concerns by working with local communities to empower them
 
 |||
 
-### HAND-PICKED <br /> LOCATIONS
+![Image](RGAsset17.png#sm#mx-auto)
 
-Carefully chosen locations that offer an array of services and activities are ready for all digital nomads
+|||
+
+### **COMMUNITY BUILDING**
+
+We created an environment which allows everyone to work together easily and effectively
 
 {% end %}
 
-<!-- section 4 -->
+<!-- section 4-3-->
 
 {% row(style="margin") %}
 
-![Image](RGAsset14.png)
+![Image](RGAsset18.png#sm#mx-auto)
 
 |||
 
-### HAND-PICKED <br /> LOCATIONS
+### **CO-WORKING SPACES**
 
-Carefully chosen locations that offer an array of services and activities are ready for all digital nomads
-
-|||
-
-![Image](RGAsset14.png)
+Enjoy the benefits of community-building sessions and tools built specifically for you!
 
 |||
 
-### HAND-PICKED <br /> LOCATIONS
+![Image](RGAsset19.png#sm#mx-auto)
 
-Carefully chosen locations that offer an array of services and activities are ready for all digital nomads
+|||
+
+### **BUILT FOR NOMADS**
+
+Enjoy all the cultural, natural, sports and networking evnts of the locations!
 
 {% end %}
