@@ -49,7 +49,7 @@ Me created an enviroment that meets people’s personal and professional needs
 
 <!-- section 3 -->
 
-{% row(style="center margin") %}
+{% row(style="center" margin="narrow") %}
 
 ![Image](RGAsset13.png)
 
@@ -65,7 +65,7 @@ Carefully chosen locations that offer an array of services and activities are re
 
 <!-- section 4 -->
 
-{% row(style="margin") %}
+{% row(style="" margin="narrow" padding="top") %}
 
 ![Image](RGAsset14.png#sm#mx-auto)
 
@@ -89,7 +89,7 @@ Take advantage of a high-speed, sovereign and decentralized internet connection!
 
 <!-- section 4-2-->
 
-{% row(style="margin") %}
+{% row(style="" margin="narrow" padding="none") %}
 
 ![Image](RGAsset16.png#sm#mx-auto)
 
@@ -113,7 +113,7 @@ We created an environment which allows everyone to work together easily and effe
 
 <!-- section 4-3-->
 
-{% row(style="margin") %}
+{% row(style="" margin="narrow" padding="bottom") %}
 
 ![Image](RGAsset18.png#sm#mx-auto)
 
