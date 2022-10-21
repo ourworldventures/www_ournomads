@@ -1,5 +1,5 @@
 ---
-title: "Locations"
+title: "locations"
 description: ""
 date: 2018-09-14
 updated: 2021-02-20
@@ -7,104 +7,108 @@ draft: false
 weight: 1
 ---
 
-<!-- section 1 (heade FF TWIN) -->
+<!-- section 1 (header) -->
 
-{% row(style="center" bgPath="bg_home.jpg" bgStyle="hero" margin="header") %}
+{% row(margin="header" bgPath="location_img.png" bgStyle="full") %}
 
-![FF TWIN](vision_header.png#medium#mx-auto)
+# THE WORLD <br> IS YOUR HOME
 
-### provide a platform which allows us to restore the original intent of the Internet<br>where everyone is equal, communication is direct, secure and private<br>where you can trust the information presented<br>where everything is free without becoming a product.
+Discover OurWorld Nomads'Locations
+?<BR> All Over the Globe.
 
-
-<button>[KNOW MORE](/vision/#fflow_grid)</button>
+<button>[KNOW MORE](/)</button>
 
 {% end %}
 
-<!-- section 2 (FF LIFE) -->
+<br>
+<br>
 
-{% row(bgColor="#f0ece8" margin="moderate" padding="top" id="fflow_grid") %}
+<!-- section 3 -->
 
-![FF LIFE](vision2.png#fill)
+{% row(style="center" margin="narrow" padding="top") %}
+
+![Image](Zanzibar.jpeg)
 
 |||
 
-## IT STARTS WITH <br> THE FREEFLOW NETWORK
+## Zanzibar <br /> Tanzania
 
-![FF LIFE](vision3.png)
+Jungle Paradise Resort
 
-People like you and me deploy FreeFlow Nodes to provide the required compute and storage capacity.  
-
-Our unique operating system interconnects these nodes to create the FreeFlow Network, our own sovereign and decentralized Internet. 
-
-<button>[KNOW MORE](/node)</button>
 
 {% end %}
 
+<!-- section 4 -->
 
-{% fflow_grid() %}
+{% row(style="" margin="narrow" padding="top") %}
 
-## fflow_grid
-
-{% end %}
-
-{% row(bgColor="#D9E7DF" margin="moderate" padding="top") %}
-
-## GET YOUR FREEFLOW TWIN
-### YOU BECOME THE CENTER OF YOUR INTERNET.
-
-The FreeFlow Twin allows everyone to experience a more sustainable and safe Internet Life.  
-
-By eliminating the need for centralized servers, the FreeFlow Twin allows you, the user, to be the only central point of data accumulation, communication and execution of digital capabilities.
-
-<button>[KNOW MORE](/twin)</button>
-
-<br>
+![Image](zanzibar2.jpeg)
 
 |||
 
-![FF LIFE](vision6.png#fill)
+###  Zanzibar <br /> Tanzania
+
+Fun Beach Resort
 
 {% end %}
 
+<!-- section 4-2-->
 
-{% fflow_twin() %}
+{% row(style="" margin="narrow" %}
 
-## fflow_twin
-
-{% end %}
-
-{% row(margin="moderate" bgColor="#F9F8F6" padding="top") %}
-
-![FF LIFE](vision8.png#fill)
+![Image](nileriver.jpeg)
 
 |||
 
-## EXPERIENCES <br> ARE BEING CREATED
+### Nile River <br /> Egypt
 
-<br>
-
-Numerous applications (experiences) will be available soon to users of the FreeFlow Network.  
-
-Each experience is decentralized and allows users to be fully private and secure.
-
-<button>[KNOW MORE](/experiences)</button>
+Veda Boats
 
 {% end %}
 
-{% fflow_experiences() %}
+<!-- section 4-2-->
 
-## fflow_experiences
+{% row(style="" margin="narrow" %}
+
+![Image](turkey.png)
+
+|||
+
+### Mugla <br /> Turkey
+
+Yenice Valley
 
 {% end %}
 
-{% row(style="center" margin="tight" bgColor="#f9f8f6") %}
+<!-- section 4-2-->
 
-![FF LIFE](be_with_us.png#mx-auto)
+{% row(style="" margin="narrow" %}
 
-### Become part of this movement where we create <br>a new version of the internet with us in the center.
+![Image](paradise.jpeg)
 
-<button>[TAKE PART](/take-part)</button>
+|||
 
-<br>
+### Dubai <br /> UAE
+
+Paradise Hilss
+
+{% end %}
+
+
+<!-- section 6 -->
+
+{% row(style="center" margin="narrow" padding="top") %}
+
+## START YOUR QURWORLD <br> EXPERIENCE NOW!
+
+Begin your nomadic journey with us.
+
+<button>[JOIN US](/)</button>
+
+{% end %}
+
+{% row(margin="header" bgPath="journey.jpg" bgStyle="full") %}
+
+    <div class="img"></div>
 
 {% end %}
