@@ -176,6 +176,6 @@ Up to 50 hectares of land is planned to be acquired. Our team is still scouting 
 
 |||
 
-![tr](img/BAMBI.png#large)
+![tr](img/bambi.png#large)
 
 {% end %}
