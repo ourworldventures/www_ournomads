@@ -65,6 +65,11 @@ img[src*="#tft_img"] {
   margin: 8px;
 }
 
+img[src*="#icon"] {
+  width: 65px;
+  margin: 4px;
+}
+
 .logo_size {
   width: 200px;
 }
@@ -78,23 +83,23 @@ img[src*="#tft_img"] {
   h1 {
     @apply text-3xl lg:text-5xl xl:text-7xl font-bold leading-none my-4;
     font-family: "lato", sans-serif;
-    line-height: 0.8;
+    line-height: 0.9;
     
   }
   h1 strong {
     @apply font-medium;
   }
   h2 {
-    @apply text-3xl md:text-4xl lg:text-5xl xl:text-8xl font-bold leading-none my-4;
+    @apply text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-bold leading-none my-4;
     font-family: "lato", sans-serif;
-    line-height: 0.8;
-    font-size:4.5rem
+    line-height: 0.9;
+    
   }
   h2 strong {
     @apply font-medium;
   }
   h3 {
-    @apply text-xl lg:text-3xl font-normal my-4;
+    @apply text-xl lg:text-4xl font-normal my-4;
   }
   h3 strong {
     @apply font-medium;

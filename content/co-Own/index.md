@@ -7,136 +7,59 @@ draft: false
 weight: 2
 ---
 
-<!-- section 1 (heade FF TWIN) -->
+<!-- section 1 (co-found) -->
 
-{% row(style="center" bgPath="bg_home.jpg" bgStyle="hero") %}
+{% row(style="center" margin="narrow" padding="") %}
 
-<br>
+## BECOME A CO-FOUNDER IN OURWORLD NOMADS {#text-4xl}
 
+Unique co-ownership structure of a diverse real-estate portfolio
 
-
-### THE FREEFLOW TWIN
-
-## own every <br> aspect of your <br> digital life
-
-
-
-The FreeFlow Twin is your digital avatar.
-
-<button>[KNOW MORE](/twin/#identity)</button>
-<button onclick="window.open('https://threefoldfoundation.github.io/books/freeflow/network/buy/buy_my_twin.html', '_blank')">GET THE TWIN</button>
-
-|||
-
-<br>
-
-<br>
-
-<br>
-
-
-
-![FF TWIN](twin_header.png)
-
-
-
-{%end%}
-
-<!-- section 2  -->
-
-
-{% row(style="center" bgColor="#F5F1ED" margin="wide" id="identity") %}
-
-![FF LIFE](twin3.png)
-
-|||
-
-
-### **THE FREEFLOW KEY**
-
-## YOUR VALUABLE KEY <br> TO YOUR DIGITAL LIFE
-
-To get access to your FreeFlow Twin you need a unique NTF known as a FreeFlow Key (FFK), these keys are valuable and unique.
-<button class="flex mx-auto" onclick="window.open('https://threefoldfoundation.github.io/books/freeflow/network/tokens/ffk.html', '_blank')">MORE INFO</button>
-
-{% end %}
-
-<!-- section 3 (oldnew) -->
-
-{% row(style="center" margin="narrow" padding="top") %}
-
-## DO ANYTHING. <br> DO EVERYTHING.
-
-Your FreeFlow Twin comes with all required skills and capabilities.
-
-{% end %}
-
-{% fflow_skills() %}
-
-## fflow_skills
-
-{% end %}
-
-{% row(style="center" bgColor="#EAF3F7" margin="wide") %}
-
-![FF LIFE](twin5.png)
-
-|||
-
-## FREE FLOWING <br> EXPERIENCES
-
-Communicate, Explore and Collaborate with you in the center of your digital life. Your twin can be used as alternative to Whatsapp, Google Drive, Zoom, Facebook, Linkedin, ...
-
-<button>[THE EXPERIENCES](/experiences)</button>
-
-{% end %}
-
-{% row(style="center" bgColor="#EFEDEB" margin="moderate") %}
-
-## THIS IS WHERE <br> DATA COMES <br> TOGETHER
-
-### Quantum Safe Data Storage System
-
-All your data is yours, can not be stolen, not corrupted nor lost. <br>Your data is usable over all your experiences. 
-
-Your digital twin manages all of this for you. e.g. you can use same chat from your collaboration app or your metaverse exploration.
-
-<button onclick="window.open('https://threefoldfoundation.github.io/books/freeflow/mytwin/intro/twin_architecture.html', '_blank')">ARCHITECTURE</button>
-
-|||
-
-![FF LIFE](twin8.png#fill)
-
-{% end %}
-
-{% row(bgColor="#f3fcf6" style="center" margin="moderate lean-right") %}
-
-## RIDICULOUSLY <br> GREEN.
-
-A typical FreeFlow user consumes less than 1 watt to live their entire digital life. 
-
-This ultra-sustainable approach allows the system to easily scale without being a burden to the planet. 
-
-|||
-
-![FreeFlow Benefits](twin7.png)
+![Image](img/dao2.png)
 
 {% end %}
 
 
-{% row(style="center" bgColor="#EFEDEB" margin="moderate") %}
+<!-- section 2 (advantages) -->
+{% row(bgColor="#F2F2F2" style="center" margin="narrow" padding="") %}
 
-![FF LIFE](digital_life.png)
+![Image](img/world.png#small#mx-auto)
+
+<p style='font-size: 18px'>
+Properties and assets of various kinds in safe locations across the world
+<p>
 
 |||
 
-## LETS GET STARTED<BR>OWN YOUR TWIN
+![Image](img/nomad.png#small#mx-auto)
 
-Become the center of your digital life and <br> Get your FreeFlow key now!
+<p style='font-size: 18px'>
+6 locations planned for co-living/working environments designed according to the needs of digital nomads
+<p>
 
+|||
 
-<button onclick="window.open('https://threefoldfoundation.github.io/books/freeflow/network/buy/buy_my_twin.html', '_blank')">GET THE TWIN</button>
+![Image](img/farm.png#small#mx-auto)
 
+<p style='font-size: 18px'>
+Farmlands provide a diversified portfolio while helping us learn how to feed our communities with local & organic foods
+<p>
 
+{% end %}
+
+<!-- section 3 (advantages) -->
+{% row(style="lean-left" margin="narrow" padding="") %}
+
+To power OurWorld Digital Nomad DAO, we will create a Digital Nomad Token (DNT) which will act as a proof of co-ownership – providing token holders the following benefits:
+
+- A seat in the OurWorld Digital Nomad governance system, overseeing the further developments of the community and its ecosystem
+
+- Yield on future rental of properties and related infrastructure (energy, food, internet generation)
+
+- Preferential access to homes, events and retreats in all locations
+
+- Priority access to organic food reserves and internet capacity
+
+- Ability to reserve premises/locations for private events
 
 {% end %}

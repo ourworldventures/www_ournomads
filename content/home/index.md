@@ -46,7 +46,7 @@ Our locations are designed to provide intimacy and bring people together
 
 ### **EXPERIENCE**
 
-Me created an enviroment that meets people’s personal and professional needs
+An enviroment that meets people’s personal and professional needs
 
 {% end %}
 
@@ -54,13 +54,13 @@ Me created an enviroment that meets people’s personal and professional needs
 
 {% row(style="center" margin="narrow") %}
 
-![Image](RGAsset13.png)
+![Image](location.jpg)
 
 |||
 
 ## HAND-PICKED <br /> LOCATIONS
 
-Carefully chosen locations that offer an array of services and activities are ready for all digital nomads
+Carefully chosen locations that offer an array of services and activities ready for all digital nomads
 
 <button>[OUR LOCATIONS](/)</button>
 
@@ -100,7 +100,7 @@ Take advantage of a high-speed, sovereign and decentralized internet connection!
 
 ### **SUPPORT LOCALS**
 
-Tackle ECG concerns by working with local communities to empower them
+Tackle ESG concerns by working with local communities to empower them
 
 |||
 
@@ -140,7 +140,7 @@ Enjoy all the cultural, natural, sports and networking evnts of the locations!
 
 <!-- section 5 -->
 
-{% row(style="center margin") %}
+{% row(style="center" margin="narrow") %}
 
 ## REGENERATE <br /> YOURSELF
 
@@ -157,7 +157,7 @@ empowers the local community!
 
 <!-- section 6 -->
 
-{% row(style="center margin narrow") %}
+{% row(style="center" margin="narrow" padding="top") %}
 
 ## START YOUR QURWORLD <br> EXPERIENCE NOW!
 
@@ -167,7 +167,7 @@ Begin your nomadic journey with us.
 
 {% end %}
 
-{% row(margin="header" bgPath="RGAsset21.png" bgStyle="full") %}
+{% row(margin="header" bgPath="journey.jpg" bgStyle="full") %}
 
     <div class="img"></div>
 
