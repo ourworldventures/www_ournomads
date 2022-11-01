@@ -159,7 +159,7 @@ empowers the local community!
 
 {% row(style="center" margin="narrow" padding="top") %}
 
-## START YOUR QURWORLD <br> EXPERIENCE NOW!
+## START YOUR OURWORLD <br> EXPERIENCE NOW!
 
 Begin your nomadic journey with us.
 

@@ -178,25 +178,4 @@ Up to 50 hectares of land is planned to be acquired. Our team is still scouting 
 
 ![tr](img/BAMBI.png#large)
 
-Paradise Hilss
-
-{% end %}
-
-
-<!-- section 6 -->
-
-{% row(style="center" margin="narrow" padding="top") %}
-
-## START YOUR QURWORLD <br> EXPERIENCE NOW!
-
-Begin your nomadic journey with us.
-
-<button>[JOIN US](/)</button>
-
-{% end %}
-
-{% row(margin="header" bgPath="journey.jpg" bgStyle="full") %}
-
-    <div class="img"></div>
-
 {% end %}
