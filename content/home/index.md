@@ -24,7 +24,7 @@ Our world offers Digital Nomads <br /> truly amazing experiences in some <br /> 
 
 <!-- section 2  -->
 
-{% row(style="center" margin="narrow" padding="none") %}
+{% row(style="center" margin="narrow" padding="bottom") %}
 
 ![REGENERATION](RGAsset10.png#medium)
 
