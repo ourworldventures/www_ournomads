@@ -9,7 +9,7 @@ weight: 2
 
 <!-- section 1 (co-found) -->
 
-{% row(style="center" margin="narrow" padding="") %}
+{% row(style="center" margin="narrow" padding="top") %}
 
 ## BECOME A CO-FOUNDER IN OURWORLD NOMADS {#text-4xl}
 
@@ -20,32 +20,22 @@ Unique co-ownership structure of a diverse real-estate portfolio
 {% end %}
 
 
-<!-- section 2 (advantages) -->
-{% row(bgColor="#F2F2F2" style="center" margin="narrow" padding="") %}
+{% row(style="center" margin="narrow" padding="none") %}
 
-![Image](img/world.png#small#mx-auto)
+<br>
 
-<p style='font-size: 18px'>
-Properties and assets of various kinds in safe locations across the world
-<p>
+<br>
 
-|||
+![Icons](img/icons.png)  
 
-![Image](img/nomad.png#small#mx-auto)
+<br>
 
-<p style='font-size: 18px'>
-6 locations planned for co-living/working environments designed according to the needs of digital nomads
-<p>
+<br>
 
-|||
-
-![Image](img/farm.png#small#mx-auto)
-
-<p style='font-size: 18px'>
-Farmlands provide a diversified portfolio while helping us learn how to feed our communities with local & organic foods
-<p>
+![Nomad](img/dig_nomad.png)  
 
 {% end %}
+
 
 <!-- section 3 (advantages) -->
 {% row(style="lean-left" margin="narrow" padding="") %}

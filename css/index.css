@@ -70,6 +70,10 @@ img[src*="#icon"] {
   margin: 4px;
 }
 
+img[src*="#fig"] {
+  width: 150px;
+}
+
 .logo_size {
   width: 200px;
 }
