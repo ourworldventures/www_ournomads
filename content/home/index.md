@@ -24,7 +24,7 @@ Our world offers Digital Nomads <br /> truly amazing experiences in some <br /> 
 
 <!-- section 2  -->
 
-{% row(style="center" margin="narrow" padding="") %}
+{% row(style="center" margin="narrow" padding="none") %}
 
 ![REGENERATION](RGAsset10.png#medium)
 
@@ -52,7 +52,7 @@ An enviroment that meets people’s personal and professional needs
 
 <!-- section 3 -->
 
-{% row(style="center" margin="narrow") %}
+{% row(style="center" margin="narrow" padding="none") %}
 
 ![Image](location.jpg)
 
@@ -140,7 +140,7 @@ Enjoy all the cultural, natural, sports and networking evnts of the locations!
 
 <!-- section 5 -->
 
-{% row(style="center" margin="narrow") %}
+{% row(style="center" margin="narrow" padding="none") %}
 
 ## REGENERATE <br /> YOURSELF
 
