@@ -155,7 +155,7 @@ There are 32 hectares of built-up land in the plot, consisting of 10 bungalows w
 
 |||
 
-![tr](img/dar.png#large)
+![tr](img/dar2.png#large)
 
 {% end %}
 
@@ -176,6 +176,6 @@ Up to 50 hectares of land is planned to be acquired. Our team is still scouting 
 
 |||
 
-![tr](img/bambi.png#large)
+![tr](img/bambi2.png#large)
 
 {% end %}
