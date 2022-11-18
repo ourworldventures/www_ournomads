@@ -1,5 +1,7 @@
 # OURWORLD NOMAD Website
 
+wesite on https://nomads.ourworld.tf/
+
 ## About
 
 A website created using Zola, a static site generator.
