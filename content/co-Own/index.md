@@ -22,17 +22,32 @@ Unique co-ownership structure of a diverse real-estate portfolio
 
 {% row(style="center" margin="narrow" padding="none") %}
 
-<br>
+![](img/world.png#small#mx-auto)  
 
-<br>
+|||
 
-![Icons](img/icons.png)  
+![](img/nomad.png#small#mx-auto)  
 
-<br>
+|||
 
-<br>
+![](img/farm.png#small#mx-auto)  
 
-![Nomad](img/dig_nomad.png)  
+
+{% end %}
+
+
+{% row(style="center" margin="narrow" padding="none") %}
+
+### Become a co-owner of real estate assets on safe locations in the world. {#text-2xl}
+
+|||
+
+### Live In Unique Locations designed to the needs of Digital nomads.  {#text-2xl}
+
+|||
+
+### Make it possible to provide regenerative farming to our communities.  {#text-2xl}
+
 
 {% end %}
 
@@ -45,11 +60,8 @@ To power OurWorld Digital Nomad DAO, we will create a Digital Nomad Token (DNT) 
 - A seat in the OurWorld Digital Nomad governance system, overseeing the further developments of the community and its ecosystem
 
 - Yield on future rental of properties and related infrastructure (energy, food, internet generation)
-
 - Preferential access to homes, events and retreats in all locations
-
 - Priority access to organic food reserves and internet capacity
-
 - Ability to reserve premises/locations for private events
 
 {% end %}
