@@ -1,7 +1,7 @@
 # builds if executable isn't foound
 if [[ ! -f "tailwindcss" ]]
 then
-    sh build.sh
+    bash build.sh
 fi
 
 # initialized and configures tailwind if not configured
