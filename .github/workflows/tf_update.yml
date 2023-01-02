@@ -1,4 +1,4 @@
-name: ourverse.tf
+name: ournomads.ourworld.tf
 on:
   push:
     branch: [development]
@@ -8,15 +8,16 @@ jobs:
     name: Deploy
     runs-on: ubuntu-latest
     steps:
-      - name: pushing latest change on nomads.ourworld.tf
+      - name: pushing latest change on ournomads.ourworld.tf
         uses: appleboy/ssh-action@master
         with:
-          host: nomads.ourworld.tf
+          host: ournomads.ourworld.tf
           username: webuser
           key: ${{ secrets.TF_SECRET }}
           port: 34022
           script: |
             cd /home/webuser/websites/www2/www_ournomads/
             git log -1
+            git restore .
             git pull
             bash build.sh
