@@ -107,28 +107,6 @@ The concept of Yenice Valle grew from a love of traditional Turkish village life
 
 ![tr](img/turkey2.png#large)
 
-<!-- section 5 (Paradise hills) -->
-
-{% end %}
-
-{% row(bgColor="#FFFFFF" margin="moderate" padding="top" id="fflow_grid") %}
-
-### PARADISE HILLS
-TOWNHOUSES IN DUBAI, UAE
-
-<p style='font-size: 15px'>
-Paradise Hills is located right within the heart of Dubai and offers a unique luxurious experience. It is an ultra-modern gated community housing 170 pent suites and townhouses, accompanied with stellar amenities and remarkable landscaping in the extensive estate grounds. There are three suites and townhouses, containing 15 rooms, available for digital nomads. Paradise Hills' state-of-the-art amenities include, but are not limited to; community center with retail shops and services, 24-hour security, kids play areas, spacious green areas with water features, jogging tracks, and a dedicated multi-purpose building hall for various occasions and functions such as weddings, international conferences, and events.
-<p>
-
-![bed](img/bed.png#icon)
-
-<p style='font-size: 15px'>
-15 ROOMS
-<p>
-
-|||
-
-![p_hills](img/dubai2.png#large)
 
 {% end %}
 
