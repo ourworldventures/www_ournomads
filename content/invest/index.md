@@ -25,7 +25,7 @@ This location in the capital is ideal for digital nomads as they have quick acce
 
 |||
 
-![bed](img/invest.png)
+![bed](img/bed.png#icon)
 
 {% end %}
 
