@@ -9,12 +9,12 @@ weight: 2
 
 <!-- section 1 (JP) -->
 
-{% row(bgColor="#FFFFFF" margin="moderate" padding="both" id="Invest") %}
+{% row(bgColor="#FFFFFF" margin="moderate" padding="both" align="center") %}
 
-### BECOME AN INVESTOR 
+# BECOME AN INVESTOR 
 
 ![invest](img/invest.png)
 
-<button>[Contact Us](mailto:info@ourworld.tf)</button>
+<button><a href="info@ourworld.tf">Contact Us</a></button>
 
 {% end %}
