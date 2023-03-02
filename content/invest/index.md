@@ -19,6 +19,6 @@ weight: 2
 
 <BR>
 
-<button><a href="info@ourworld.tf">Contact Us</a></button>
+<button><a href="mailto:info@ourworld.tf">Contact Us</a></button>
 
 {% end %}
