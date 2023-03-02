@@ -15,7 +15,7 @@ weight: 1
 
 Our world offers Digital Nomads <br /> truly amazing experiences in some <br /> of the world’s best locations.
 
-<button>[KNOW MORE](/)</button>
+<button>[KNOW MORE](/locations)</button>
 
 {% end %}
 
@@ -62,7 +62,7 @@ An enviroment that meets people’s personal and professional needs
 
 Carefully chosen locations that offer an array of services and activities ready for all digital nomads
 
-<button>[OUR LOCATIONS](/)</button>
+<button>[OUR LOCATIONS](/locations)</button>
 
 {% end %}
 
@@ -163,7 +163,7 @@ empowers the local community!
 
 Begin your nomadic journey with us.
 
-<button>[OUR LOCATIONS](/)</button>
+<button>[OUR LOCATIONS](/locations)</button>
 
 {% end %}
 
