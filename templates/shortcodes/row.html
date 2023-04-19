@@ -74,6 +74,17 @@ Parameters:
 
 {% set row_class =  row_class ~ padding_class %}
 
+ <!-- reverse col at mobile -->
+
+
+ {% if reverse %}
+ {% if "rightreserve" in reverse %}
+ {% set row_class = "flex flex-col-reverse md:flex-row items-center mx-8" %}
+ {% elif "leftreserve" in reverse %}
+ {% set row_class = "flex flex-col md:flex-row items-center mx-8" %}
+     
+ {% endif %}
+ {% endif %}
 
 <!-- Margins -->
 
@@ -119,6 +130,11 @@ Parameters:
     {% if "center" in style %}
         {% set row_class = row_class ~ " text-center items-center mx-auto " %}
         {% set col_class = col_class ~ " flex-1 " %}
+    {% endif %}
+
+    {% if "right" in style %}
+    {% set row_class = row_class ~ " text-center lg:text-right md:text-right justify-center " %}
+    {% set col_class = col_class ~ " " %}
     {% endif %}
 
     {% if "items-end" in style %}

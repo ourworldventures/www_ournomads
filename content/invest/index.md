@@ -7,7 +7,13 @@ draft: false
 weight: 2
 ---
 
+<div class="container mx-auto"> 
+
 <!-- section 1 (JP) -->
+
+<br>
+
+<br>
 
 {% row(style="center" bgColor="#FFFFFF" margin="moderate" padding="both") %}
 
@@ -15,10 +21,12 @@ weight: 2
 
 <BR>
 
-![invest](img/invest.png)
+![invest](img/invest.png#mx-auto)
 
 <BR>
 
 <button><a href="mailto:info@ourworld.tf">Contact Us</a></button>
 
 {% end %}
+
+</div> 

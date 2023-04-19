@@ -7,6 +7,7 @@ draft: false
 weight: 1
 ---
 
+
 <!-- section 1 (header) -->
 
 {% row(margin="header" bgPath="home_header.jpg" bgStyle="full") %}
@@ -19,14 +20,14 @@ Our world offers Digital Nomads <br /> truly amazing experiences in some <br /> 
 
 {% end %}
 
-<br>
-<br>
+
+<div class="container mx-auto"> 
 
 <!-- section 2  -->
 
-{% row(style="center" margin="narrow" padding="bottom") %}
+{% row(style="center" margin="moderate" padding="both") %}
 
-![REGENERATION](RGAsset10.png#medium)
+![REGENERATION](RGAsset10.png#medium#mx-auto)
 
 ### **REGENERATION**
 
@@ -34,7 +35,7 @@ We offer endless services to heal the body, mind and soul
 
 |||
 
-![CONNECTIONS](RGAsset11.png#medium)
+![CONNECTIONS](RGAsset11.png#medium#mx-auto)
 
 ### **CONNECTIONS**
 
@@ -42,7 +43,7 @@ Our locations are designed to provide intimacy and bring people together
 
 |||
 
-![EXPERIENCE](RGAsset12.png#medium)
+![EXPERIENCE](RGAsset12.png#medium#mx-auto)
 
 ### **EXPERIENCE**
 
@@ -52,7 +53,7 @@ An enviroment that meets people’s personal and professional needs
 
 <!-- section 3 -->
 
-{% row(style="center" margin="narrow" padding="none") %}
+{% row(margin="moderate" padding="none") %}
 
 ![Image](location.jpg)
 
@@ -68,7 +69,7 @@ Carefully chosen locations that offer an array of services and activities ready 
 
 <!-- section 4 -->
 
-{% row(style="" margin="narrow" padding="top") %}
+{% row(style="" margin="moderate" padding="top") %}
 
 ![Image](RGAsset14.png#sm#mx-auto)
 
@@ -92,7 +93,7 @@ Take advantage of a high-speed, sovereign and decentralized internet connection!
 
 <!-- section 4-2-->
 
-{% row(style="" margin="narrow" padding="none") %}
+{% row(style="" margin="moderate" padding="none") %}
 
 ![Image](RGAsset16.png#sm#mx-auto)
 
@@ -116,7 +117,7 @@ We created an environment which allows everyone to work together easily and effe
 
 <!-- section 4-3-->
 
-{% row(style="" margin="narrow" padding="bottom") %}
+{% row(style="" margin="moderate" padding="bottom") %}
 
 ![Image](RGAsset18.png#sm#mx-auto)
 
@@ -140,7 +141,7 @@ Enjoy all the cultural, natural, sports and networking evnts of the locations!
 
 <!-- section 5 -->
 
-{% row(style="center" margin="narrow" padding="none") %}
+{% row(style="rightreserve" reserve="rightreserve" margin="moderate" padding="both") %}
 
 ## REGENERATE <br /> YOURSELF
 
@@ -151,9 +152,11 @@ empowers the local community!
 
 |||
 
-![Image](RGAsset20.png)
+![Image](RGAsset20.png#mx-auto)
 
 {% end %}
+
+</div> 
 
 <!-- section 6 -->
 
@@ -172,3 +175,4 @@ Begin your nomadic journey with us.
     <div class="img"></div>
 
 {% end %}
+

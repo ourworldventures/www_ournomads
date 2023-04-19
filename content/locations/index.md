@@ -7,9 +7,18 @@ draft: false
 weight: 1
 ---
 
+
+
+
+<br>
+
+<br>
+
+
+
 <!-- section 1 (JP) -->
 
-{% row(bgColor="#FFFFFF" margin="moderate" padding="top" id="fflow_grid") %}
+{% row(bgColor="#FFFFFF" reserve="rightreserve" margin="moderate" padding="top" id="fflow_grid") %}
 
 ### JUNGLE PARADISE 
 
@@ -31,13 +40,13 @@ This location in the capital is ideal for digital nomads as they have quick acce
 
 |||
 
-![jp](img/jp2.png#large)
+![jp](img/jp2.png#mx-auto)
 
 {% end %}
 
 <!-- section 2 (Fun beach) -->
 
-{% row(bgColor="#F2F2F2" margin="moderate" padding="top" id="fflow_grid") %}
+{% row(bgColor="#F2F2F2" reserve="rightreserve" margin="moderate" padding="top" id="fflow_grid") %}
 
 ### FUN BEACH
 HOTEL IN ZANZIBAR, TANZANIA
@@ -64,7 +73,7 @@ The top class restaurant offers breakfast, lunch and dinner in a range of cuisin
 
 <!-- section 3 (Veda boats) -->
 
-{% row(bgColor="#FFFFFF" margin="moderate" padding="top" id="fflow_grid") %}
+{% row(bgColor="#FFFFFF" reserve="rightreserve" margin="moderate" padding="top" id="fflow_grid") %}
 
 ### NILE VEDA
 BOATS IN LUXOR, EGYPT
@@ -88,7 +97,7 @@ Dahabiyas are traditional sailing boats used on the Nile river. This location in
 
 <!-- section 4 (Yenice valley) -->
 
-{% row(bgColor="#F2F2F2" margin="moderate" padding="top" id="fflow_grid") %}
+{% row(bgColor="#F2F2F2" reserve="rightreserve" margin="moderate" padding="top" id="fflow_grid") %}
 
 ### YENICE VALLEY
 RESORT IN MUGLA, TURKEY
@@ -112,7 +121,7 @@ The concept of Yenice Valle grew from a love of traditional Turkish village life
 
 <!-- section 5 (Dar) -->
 
-{% row(bgColor="#F2F2F2" margin="moderate" padding="top" id="fflow_grid") %}
+{% row(bgColor="#F2F2F2" reserve="rightreserve" margin="moderate" padding="top" id="fflow_grid") %}
 
 ### CITY OF PEACE
 RESORT IN DAR ES SALAAM, TANZANIA
@@ -139,7 +148,7 @@ There are 32 hectares of built-up land in the plot, consisting of 10 bungalows w
 
 <!-- section 5 (FARMS) -->
 
-{% row(bgColor="#FFFFFF" margin="moderate" padding="top" id="fflow_grid") %}
+{% row(bgColor="#FFFFFF" reserve="rightreserve" margin="moderate" padding="top" id="fflow_grid") %}
 
 ### FARMS
 MULTIPLE LANDS IN TANZANIA
@@ -157,3 +166,4 @@ Up to 50 hectares of land is planned to be acquired. Our team is still scouting 
 ![tr](img/bambi2.png#large)
 
 {% end %}
+
