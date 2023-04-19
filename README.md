@@ -1,14 +1,8 @@
-# OURWORLD NOMAD Website
-
-https://nomads.ourworld.tf/
-
-Digital Nomads Experience by Ourworld.
-
 # Welcome to OurNomads Website Repository
 
 ## About
 
-The official website of OurNomads, powered by Ourworld.
+The official website of OurNomads- A Digital Nomads Experience Powered by Ourworld.
 
 [nomads.ourworld.tf](nomads.ourworld.tf)
 
