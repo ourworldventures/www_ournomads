@@ -15,7 +15,7 @@ weight: 1
 
 {% row(bgColor="#FFFFFF" margin="moderate" padding="both" id="fflow_grid") %}
 
-![jp](img/jp2.png#mx-auto)
+![jp](img/jp2.jpg#mx-auto)
 
 |||
 
@@ -78,7 +78,7 @@ The top class restaurant offers breakfast, lunch and dinner in a range of cuisin
 
 {% row(bgColor="#FFFFFF" margin="moderate" padding="both" id="fflow_grid") %}
 
-![veda](img/nile2.png#mx-auto)
+![veda](img/nile2.jpg#mx-auto)
 
 |||
 
@@ -130,7 +130,7 @@ The concept of Yenice Valle grew from a love of traditional Turkish village life
 
 {% row(bgColor="#F2F2F2" reserve="rightreserve" margin="moderate" padding="top" id="fflow_grid") %}
 
-![tr](img/dar2.png#mx-auto)
+![tr](img/dar2.jpg#mx-auto)
 
 |||
 
@@ -170,7 +170,7 @@ Up to 50 hectares of land is planned to be acquired. Our team is still scouting 
 
 |||
 
-![tr](img/bambi2.png#mx-auto)
+![tr](img/bambi2.jpg#mx-auto)
 
 {% end %}
 
