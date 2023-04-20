@@ -7,18 +7,17 @@ draft: false
 weight: 1
 ---
 
-
-
-
 <br>
 
 <br>
-
-
 
 <!-- section 1 (JP) -->
 
-{% row(bgColor="#FFFFFF" reserve="rightreserve" margin="moderate" padding="top" id="fflow_grid") %}
+{% row(bgColor="#FFFFFF" margin="moderate" padding="both" id="fflow_grid") %}
+
+![jp](img/jp2.png#mx-auto)
+
+|||
 
 ### JUNGLE PARADISE 
 
@@ -32,21 +31,21 @@ Jungle Paradise is based at Mbweni in Zanzibar and is home to a boutique hotel, 
 This location in the capital is ideal for digital nomads as they have quick access to Zanzibar's business district and airport, while being in a remote and peaceful neighbourhood.
 </p>
 
+
+
 ![bed](img/bed.png#icon)
+
+
 
 <p style='font-size: 15px'>
 46 ROOMS
 </p>
 
-|||
-
-![jp](img/jp2.png#mx-auto)
-
 {% end %}
 
 <!-- section 2 (Fun beach) -->
 
-{% row(bgColor="#F2F2F2" reserve="rightreserve" margin="moderate" padding="top" id="fflow_grid") %}
+{% row(reverse="rightreserve" style="right" bgColor="#F2F2F2" margin="moderate" padding="top" id="fflow_grid") %}
 
 ### FUN BEACH
 HOTEL IN ZANZIBAR, TANZANIA
@@ -59,7 +58,11 @@ Fun Beach is a beachfront property in the south-east of Zanzibar which provides 
 The top class restaurant offers breakfast, lunch and dinner in a range of cuisines - international, Indian, Arabian and more.There are two pools, sized 26m and 27m, on the beach front of the property flowing into each other. They provide a full view of the Indian Ocean. There is also a pool in the centre with small islands and sitting areas. The game room features billiards, ping pong, and a football table in addition to a TV and library area. Throughout Fun Beach there is ultra-fast wifi connectivity.
 </p>
 
+<div class="rightImg">
+
 ![bed](img/bed.png#icon)
+
+</div>
 
 <p style='font-size: 15px'>
 40 ROOMS
@@ -67,13 +70,17 @@ The top class restaurant offers breakfast, lunch and dinner in a range of cuisin
 
 |||
 
-![fun](img/fun2.png#large)
+![fun](img/fun2.png#mx-auto)
 
 {% end %}
 
 <!-- section 3 (Veda boats) -->
 
-{% row(bgColor="#FFFFFF" reserve="rightreserve" margin="moderate" padding="top" id="fflow_grid") %}
+{% row(bgColor="#FFFFFF" margin="moderate" padding="both" id="fflow_grid") %}
+
+![veda](img/nile2.png#mx-auto)
+
+|||
 
 ### NILE VEDA
 BOATS IN LUXOR, EGYPT
@@ -88,16 +95,12 @@ Dahabiyas are traditional sailing boats used on the Nile river. This location in
 39 ROOMS
 <p>
 
-|||
-
-![veda](img/nile2.png#large)
-
 {% end %}
 
 
 <!-- section 4 (Yenice valley) -->
 
-{% row(bgColor="#F2F2F2" reserve="rightreserve" margin="moderate" padding="top" id="fflow_grid") %}
+{% row(reverse="rightreserve" style="right" bgColor="#F2F2F2" margin="moderate" padding="top" id="fflow_grid") %}
 
 ### YENICE VALLEY
 RESORT IN MUGLA, TURKEY
@@ -106,7 +109,11 @@ RESORT IN MUGLA, TURKEY
 The concept of Yenice Valle grew from a love of traditional Turkish village life and the desire to sustain our natural environment. Yenice Valley has come to reality in a secluded valley, surrounded by tree-covered mountains, with accommodation built using traditional local materials, to include a treehouse, stone cottages, and a log cabin, each in plenty of space, well-furnished and fully equipped. The focal point is a stunning stone-built boutique hotel, which fits perfectly with the surrounding countryside.
 <p>
 
+<div class="rightImg">
+
 ![bed](img/bed.png#icon)
+
+</div>
 
 <p style='font-size: 15px'>
 55 ROOMS
@@ -114,7 +121,7 @@ The concept of Yenice Valle grew from a love of traditional Turkish village life
 
 |||
 
-![tr](img/turkey2.png#large)
+![tr](img/turkey2.png#mx-auto)
 
 
 {% end %}
@@ -122,6 +129,10 @@ The concept of Yenice Valle grew from a love of traditional Turkish village life
 <!-- section 5 (Dar) -->
 
 {% row(bgColor="#F2F2F2" reserve="rightreserve" margin="moderate" padding="top" id="fflow_grid") %}
+
+![tr](img/dar2.png#mx-auto)
+
+|||
 
 ### CITY OF PEACE
 RESORT IN DAR ES SALAAM, TANZANIA
@@ -140,15 +151,11 @@ There are 32 hectares of built-up land in the plot, consisting of 10 bungalows w
 60 ROOMS
 <p>
 
-|||
-
-![tr](img/dar2.png#large)
-
 {% end %}
 
 <!-- section 5 (FARMS) -->
 
-{% row(bgColor="#FFFFFF" reserve="rightreserve" margin="moderate" padding="top" id="fflow_grid") %}
+{% row(reverse="rightreserve" style="right" bgColor="#FFFFFF" reserve="rightreserve" margin="moderate" padding="top" id="fflow_grid") %}
 
 ### FARMS
 MULTIPLE LANDS IN TANZANIA
@@ -163,7 +170,13 @@ Up to 50 hectares of land is planned to be acquired. Our team is still scouting 
 
 |||
 
-![tr](img/bambi2.png#large)
+![tr](img/bambi2.png#mx-auto)
 
 {% end %}
 
+<style>
+    .rightImg{
+     display: flex;
+     justify-content: right;
+    }
+</style>

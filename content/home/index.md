@@ -141,7 +141,7 @@ Enjoy all the cultural, natural, sports and networking evnts of the locations!
 
 <!-- section 5 -->
 
-{% row(style="rightreserve" reserve="rightreserve" margin="moderate" padding="both") %}
+{% row(style="right" reverse="rightreserve" reserve="rightreserve" margin="moderate" padding="both") %}
 
 ## REGENERATE <br /> YOURSELF
 

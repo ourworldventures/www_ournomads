@@ -7,7 +7,15 @@ draft: false
 weight: 2
 ---
 
+
+<div class="container mx-auto"> 
+
 <!-- section 1 (co-found) -->
+
+<br>
+
+<br>
+
 
 {% row(style="center" margin="narrow" padding="top") %}
 
@@ -65,3 +73,5 @@ To power OurWorld Digital Nomad DAO, we will create a Digital Nomad Token (DNT) 
 - Ability to reserve premises/locations for private events
 
 {% end %}
+
+</div>
