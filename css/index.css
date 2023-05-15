@@ -380,6 +380,14 @@ header {
     padding: 80px 0;
   }
 
+  img[src*="#medium"] {
+    width: 300px;
+}
+
+img[src*="#sm"] {
+  width: 130px;
+}
+
   h2 {
     font-size: 3rem;
   }

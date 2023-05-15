@@ -12,6 +12,10 @@ weight: 1
 
 {% row(margin="header" bgPath="home_header.jpg" bgStyle="full") %}
 
+<br>
+
+<br>
+
 # WORK, <br> LIVE & PLAY
 
 Our world offers Digital Nomads <br /> truly amazing experiences in some <br /> of the world’s best locations.
@@ -152,7 +156,7 @@ empowers the local community!
 
 |||
 
-![Image](RGAsset20.png#mx-auto)
+![Image](RGAsset20.png#medium#mx-auto)
 
 {% end %}
 
