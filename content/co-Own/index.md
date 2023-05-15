@@ -30,15 +30,15 @@ Unique co-ownership structure of a diverse real-estate portfolio
 
 {% row(style="center" margin="narrow" padding="none") %}
 
-![](img/world.png#small#mx-auto)  
+![](img/world.png#iconsize#mx-auto)  
 
 |||
 
-![](img/nomad.png#small#mx-auto)  
+![](img/nomad.png#iconsize#mx-auto)  
 
 |||
 
-![](img/farm.png#small#mx-auto)  
+![](img/farm.png#iconsize#mx-auto)  
 
 
 {% end %}

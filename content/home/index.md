@@ -85,7 +85,7 @@ Live in sustainable and planet-conscious structures built to support the planet
 
 |||
 
-![Image](RGAsset15.png#sm#mx-auto)
+![Image](RGAsset15.png#small#mx-auto)
 
 |||
 
@@ -99,7 +99,7 @@ Take advantage of a high-speed, sovereign and decentralized internet connection!
 
 {% row(style="" margin="moderate" padding="none") %}
 
-![Image](RGAsset16.png#sm#mx-auto)
+![Image](RGAsset16.png#small#mx-auto)
 
 |||
 
@@ -109,7 +109,7 @@ Tackle ESG concerns by working with local communities to empower them
 
 |||
 
-![Image](RGAsset17.png#sm#mx-auto)
+![Image](RGAsset17.png#small#mx-auto)
 
 |||
 
@@ -123,7 +123,7 @@ We created an environment which allows everyone to work together easily and effe
 
 {% row(style="" margin="moderate" padding="bottom") %}
 
-![Image](RGAsset18.png#sm#mx-auto)
+![Image](RGAsset18.png#small#mx-auto)
 
 |||
 
@@ -133,7 +133,7 @@ Enjoy the benefits of community-building sessions and tools built specifically f
 
 |||
 
-![Image](RGAsset19.png#sm#mx-auto)
+![Image](RGAsset19.png#small#mx-auto)
 
 |||
 

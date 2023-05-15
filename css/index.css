@@ -37,6 +37,10 @@ img[src*="#sm"] {
   width: 200px;
 }
 
+img[src*="#iconsize"] {
+  width: 200px;
+}
+
 img[src*="#md"] {
     width: 300px;
 }
@@ -383,11 +387,9 @@ header {
   img[src*="#medium"] {
     width: 300px;
 }
-
-img[src*="#sm"] {
+img[src*="#iconsize"] {
   width: 130px;
 }
-
   h2 {
     font-size: 3rem;
   }
