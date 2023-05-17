@@ -10,20 +10,24 @@ weight: 1
 
 <!-- section 1 (header) -->
 
-{% row(margin="header" bgPath="home_header.jpg" bgStyle="full") %}
+{% row(style="center" margin="tight" bgPath="homeheader.jpg" bgStyle="full") %}
 
 <br>
 
 <br>
 
-# WORK, <br> LIVE & PLAY
+<div class="bg-gray-200/50 py-4 px-4 rounded-md">
 
-Our world offers Digital Nomads <br /> truly amazing experiences in some <br /> of the world’s best locations.
+# WORK, LIVE & PLAY
+
+Our world offers Digital Nomads truly amazing experiences in some of the world’s best locations.
 
 <button>[KNOW MORE](/locations)</button>
 
-{% end %}
+</div>
 
+
+{% end %}
 
 <div class="container mx-auto"> 
 

@@ -87,9 +87,12 @@ img[src*="#fig"] {
   font-family: "lato";
 }
 
+a:hover {
+  color: #5a5a5a;
+}
 @layer components {
   h1 {
-    @apply text-3xl lg:text-5xl xl:text-7xl font-bold leading-none my-4;
+    @apply text-3xl md:text-4xl lg:text-6xl font-bold leading-none my-4;
     font-family: "lato", sans-serif;
     line-height: 0.9;
     
@@ -98,7 +101,7 @@ img[src*="#fig"] {
     @apply font-medium;
   }
   h2 {
-    @apply text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-bold leading-none my-4;
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold leading-none my-4;
     font-family: "lato", sans-serif;
     line-height: 0.9;
     
