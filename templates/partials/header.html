@@ -12,7 +12,7 @@
 
     function toggleMenu(button) {
         if (displayedMenu === button.id.split("-")[0]) { 
-            button.className = button.className.replace(" text-blue-500 bg-stone-200 sm:bg-transparent", " text-gray-900");
+            button.className = button.className.replace(" text-green-500 bg-stone-200 sm:bg-transparent", " text-gray-900");
             hideMenu(button.id.split("-")[0]);
             button.lastElementChild.className = button.lastElementChild.className.replace("rotate-0", "-rotate-90")
             displayedMenu = "";
@@ -20,7 +20,7 @@
         else { 
             showMenu(button.id.split("-")[0]);
             button.lastElementChild.className = button.lastElementChild.className.replace("-rotate-90", "rotate-0")
-            button.className = button.className.replace(" text-gray-900", " text-blue-500 bg-stone-200 sm:bg-transparent");
+            button.className = button.className.replace(" text-gray-900", " text-green-500 bg-stone-200 sm:bg-transparent");
             displayedMenu = button.id.split("-")[0]
         }
     }
@@ -79,7 +79,7 @@
         buttons.forEach((button) => {
             button.addEventListener( 'click', function() { handleClick(button) });
         })
-        document.getElementById("mobile-learn-btn").addEventListener( 'click', toggleMenu);
+        //document.getElementById("mobile-learn-btn").addEventListener( 'click', toggleMenu);
     }
 
 </script>
@@ -97,7 +97,7 @@
 {% else %}
     <header id="header-container">
         {% set header_class = config.extra.header_class | default(value='') %}
-        <div class="{{'z-10 bg-white fixed w-screen ' ~ header_class}}">
+        <div class="{{'z-10 header_BG fixed w-screen max-w-full ' ~ header_class}}">
             <div class="relative z-50 shadow">
             <div class="mx-auto flex z-50 shadow justify-between items-center pl-6 pr-2 md:pr-0 lg:py-5  md:px-12 py-2 lg:px-20 lg:justify-start lg:space-x-20">
                 <div>
@@ -108,22 +108,22 @@
                 <div class="-mr-2 -my-2 lg:hidden">
                     <button id="hamburger-btn" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out my-2">
                         <!-- Heroicon name: menu -->
-                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg class="h-6 w-6 text-black" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
                     </button>
                 <button id="close-hamburger-btn" type="button" class="hidden lg:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out my-2">
                     <!-- Heroicon name: x -->
-                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg class="h-6 w-6 text-black" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                     </svg>
                     </button>
                 </div>
                 <div class="hidden lg:flex-1 lg:flex lg:items-center lg:justify-end lg:space-x-12">
-                    <nav class="flex space-x-10">    
+                    <nav class="flex space-x-6">    
                     {% for page in section.pages %}
                     {% if page.extra.menu %} {% continue %} {% endif %}
-                        <a href="{{page.permalink}}" class="text-lg leading-6 text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150 mt-0">
+                        <a href="{{page.permalink}}" class="text-lg uppercase font-semibold leading-6 text-black focus:outline-none focus:text-gray-900 transition ease-in-out duration-150 mt-0">
                             {{page.title}}
                         </a>
                         <div class="relative">
@@ -133,7 +133,7 @@
                         {% if subsection == "footer/_index.md" %} {% continue %} {% endif %}                        
                         {% set button_id = subsection ~ "-menu-btn" | slugify %}
                         <div class="relative">
-                        <button type="button" id="{{button_id}}" class="nav_btn text-gray-900 group inline-flex items-center space-x-2 text-lg leading-6 hover:text-blue-300 focus:outline-none transition ease-in-out duration-150">
+                        <button type="button" id="{{button_id}}" class="nav_btn text-gray-900 group inline-flex items-center space-x-2 text-lg leading-6 hover:text-green-300 focus:outline-none transition ease-in-out duration-150">
                             <span>{{ subsection }}</span>
                             <div class="-rotate-90 transition-transform"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/></svg></div>
                         </button>
@@ -173,7 +173,7 @@
         <div id="hamburger" class="hidden fixed mt-16 z-20 top-0 inset-x-0 transition transform origin-top-right lg:hidden">
             <div>
                 <div class="shadow-xs h-screen bg-white divide-y-2 divide-gray-50">
-                    <div class="pb-6 sm:px-12 md:px-16 lg:px-20 space-y-6 sm:space-y-8 sm:pb-8 max-h-screen overflow-y-auto">
+                    <div class="pt-6 sm:px-12 md:px-16 lg:px-20 space-y-6 sm:space-y-8 sm:pb-8 max-h-screen overflow-y-auto">
     
                         <nav class="flex flex-col justify-around pb-12">
                         {% for page in section.pages %}
@@ -223,4 +223,7 @@
     
 {% endif %}
 
-
+<style>
+    .logo{
+    width: 200px;}
+</style>
