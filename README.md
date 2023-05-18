@@ -4,7 +4,9 @@
 
 The official website of OurNomads- A Digital Nomads Experience Powered by Ourworld.
 
-[https://ournomads.ourworld.tf/](https://ournomads.ourworld.tf/)
+production [https://ournomads.ourworld.tf/](https://ournomads.ourworld.tf/)
+
+staging    [https://www2.ournomads.ourworld.tf/](https://www2.ournomads.ourworld.tf/)
 
 Last Updated: March 2023
 
