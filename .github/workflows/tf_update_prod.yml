@@ -18,7 +18,7 @@ jobs:
         script: |
           cd websites/www_ournomads/
           git log -1
-          git restore .
-          git pull
+          git fetch
+          git reset --hard origin/master
           sed -i "s/https:\/\/www2.ournomads.ourworld.tf/https:\/\/ournomads.ourworld.tf/g" config.toml
           ./build.sh
